@@ -30,10 +30,22 @@ counter-routed.ncd: counter.ncd
 counter.bit: counter-routed.ncd
 	bitgen -w counter-routed.ncd counter.bit
 
+
+fpgas_ls:
+	djtgcfg enum
+
+fpga_init:
+	djtgcfg init -d DOnbUsb
+
 upload:
-	djtgcfg prog -d Nexys2 -i 1 -f counter.bit
+	djtgcfg prog -d DOnbUsb -i 1 -f counter.bit
+
+
 
 clean:
-	rm -Rf $(CLEAN)
+	rm -rf $(CLEAN)
+	rm -rf xlnx_auto_*_xdb
+	rm -rf _xmsgs
+	rm -rf webtalk.log
 
-.PHONY: clean view
+.PHONY: clean
