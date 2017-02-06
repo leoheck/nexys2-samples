@@ -46,7 +46,7 @@ clean:
 	rm -rf $(CLEAN)
 	rm -rf xlnx_auto_*_xdb
 	rm -rf _xmsgs
-	rm -f *log
+	rm -f *.log
 	rm -f *.lso
 	rm -f *.xrpt
 	rm -f *.xwbt

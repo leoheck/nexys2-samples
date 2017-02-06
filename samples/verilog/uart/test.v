@@ -1,5 +1,4 @@
-module test
-(
+module test (
 	input                clk,
 	input                rxd,
 	output               txd,
@@ -22,16 +21,16 @@ assign leds[4] = 1'b0;
 
 uart uart0
 (
-	.clk          ( clk          ),
-	.rxd          ( rxd          ),
-	.txd          ( txd          ),
-	.data_in      ( data_in      ),
-	.data_out     ( data_out     ),
-	.rd           ( rd           ),
-	.wr           ( wr           ),
-	.rda          ( rda          ),
-	.tbe          ( tbe          ),
-	.leds         ( leds[3:0]    )
+	.clk          ( clk       ),
+	.rxd          ( rxd       ),
+	.txd          ( txd       ),
+	.data_in      ( data_in   ),
+	.data_out     ( data_out  ),
+	.rd           ( rd        ),
+	.wr           ( wr        ),
+	.rda          ( rda       ),
+	.tbe          ( tbe       ),
+	.leds         ( leds[3:0] )
 );
 
 initial begin
