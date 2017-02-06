@@ -1,0 +1,24 @@
+
+#Created by Constraints Editor (xc3s1200e-fg320-4) - 2011/08/31
+# NET "clk" TNM_NET = CLK;
+# TIMESPEC TS_CLK = PERIOD "clk" 50 MHz HIGH 50%;
+
+NET "clk"    LOC = "B8";
+
+NET "led<0>" LOC = "J14";
+NET "led<1>" LOC = "J15";
+NET "led<2>" LOC = "K15";
+NET "led<3>" LOC = "K14";
+NET "led<4>" LOC = "E16";
+NET "led<5>" LOC = "P16";
+NET "led<6>" LOC = "E4";
+NET "led<7>" LOC = "P4";
+
+NET "sw<0>"  LOC = "G18";
+NET "sw<1>"  LOC = "H18";
+NET "sw<2>"  LOC = "K18";
+NET "sw<3>"  LOC = "K17";
+NET "sw<4>"  LOC = "L14";
+NET "sw<5>"  LOC = "L13";
+NET "sw<6>"  LOC = "N17";
+NET "sw<7>"  LOC = "R17";
