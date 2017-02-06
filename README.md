@@ -30,3 +30,8 @@ https://wiki.gentoo.org/wiki/Xilinx_USB_JTAG_Programmers
 
 http://elinux.org/Install_Xilinx_USB_cable_drivers_for_Ubuntu
 /soft64/xilinx/ferramentas/ISE/14.6/ISE_DS/common/bin/lin64/digilent
+
+
+
+VHDL examples taken from [FPGA-Nexys-2-Beginner](https://github.com/duncanspumpkin/FPGA-Nexys-2-Beginner) repo
+

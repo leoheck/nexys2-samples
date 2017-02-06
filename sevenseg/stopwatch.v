@@ -7,7 +7,7 @@ module stopwatch
 	output          dp
 );
 
-reg  [27:0]  counter;
+reg  [27:0]  sevenseg;
 reg  [3:0]   sec0;
 reg  [3:0]   sec1;
 reg  [3:0]   min0;
@@ -32,9 +32,9 @@ end
 
 always @(posedge clk) begin
 	if (counting == 1'b1) begin
-		counter <= counter + 1;
-		if (counter == 50000000) begin
-			counter <= 1;
+		sevenseg <= sevenseg + 1;
+		if (sevenseg == 50000000) begin
+			sevenseg <= 1;
 			sec0 <= sec0 + 1;
 		end
 

@@ -1,7 +1,7 @@
 SRC = stopwatch.v sevenseg.v
 
 CLEAN = sevenseg.bgn sevenseg.drc sevenseg.mrp sevenseg.ngd sevenseg.pcf \
-	sevenseg.bld sevenseg.lso stopwatch.lso sevenseg.ncd sevenseg.ngm sevenseg.srp \
+	sevenseg.bld sevenseg.lso sevenseg.ncd sevenseg.ngm sevenseg.srp \
 	sevenseg.bit sevenseg_signalbrowser.* sevenseg-routed_pad.tx \
 	sevenseg.map sevenseg_summary.xml timing.twr \
 	sevenseg-routed* sevenseg_usage* sevenseg.ngc param.opt netlist.lst \
@@ -30,10 +30,26 @@ sevenseg-routed.ncd: sevenseg.ncd
 sevenseg.bit: sevenseg-routed.ncd
 	bitgen -w sevenseg-routed.ncd sevenseg.bit
 
+
+fpgas_ls:
+	djtgcfg enum
+
+fpga_init:
+	djtgcfg init -d DOnbUsb
+
 upload:
-	djtgcfg prog -d Nexys2 -i 1 -f sevenseg.bit
+	djtgcfg prog -d DOnbUsb -i 1 -f sevenseg.bit
+
+
 
 clean:
-	rm -Rf $(CLEAN)
+	rm -rf $(CLEAN)
+	rm -rf xlnx_auto_*_xdb
+	rm -rf _xmsgs
+	rm -f *log
+	rm -f *.lso
+	rm -f *.xrpt
+	rm -f *.xwbt
 
-.PHONY: clean view
+
+.PHONY: clean

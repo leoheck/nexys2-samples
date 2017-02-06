@@ -46,6 +46,9 @@ clean:
 	rm -rf $(CLEAN)
 	rm -rf xlnx_auto_*_xdb
 	rm -rf _xmsgs
-	rm -rf webtalk.log
+	rm -f *log
+	rm -f *.lso
+	rm -f *.xrpt
+	rm -f *.xwbt
 
 .PHONY: clean
