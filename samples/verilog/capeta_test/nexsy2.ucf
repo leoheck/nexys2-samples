@@ -1,0 +1,110 @@
+
+NET "clk" LOC = "B8" | IOSTANDARD = LVCMOS33;
+NET "clk" PERIOD = 20 HIGH 50%;
+
+NET "leds<0>"  LOC = "J14" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "leds<1>"  LOC = "J15" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "leds<2>"  LOC = "K15" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "leds<3>"  LOC = "K14" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+
+NET "rx" LOC = "U6" | IOSTANDARD = LVTTL;
+NET "tx" LOC = "P9" | IOSTANDARD = LVTTL;
+
+
+
+#===================
+#===================
+#===================
+#===================
+
+
+# Capeta DFT
+# Leandro Sehnem Heck
+
+
+## Clock pin for Nexys 2 Board
+# NET "clk_i"         LOC = "B8";      # Bank = 0, Pin name = IP_L13P_0/GCLK8, Type = GCLK,                  Sch name = GCLK0 (50MHz)
+# NET "rst"           LOC = "G18";     # Bank = 0, Pin name = IP_L13P_0/GCLK8, Type = GCLK,                  Sch name = GCLK0
+
+# NET "clk" LOC = "B8" | IOSTANDARD = LVCMOS33 ;
+# NET "clk" PERIOD = 20 HIGH 50%;
+
+# NET "rxd" LOC = "U6" | IOSTANDARD = LVTTL ;
+# NET "txd" LOC = "P9" | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = SLOW ;
+
+# ========================================================================================================================================
+# ALGUNS ACESSORIOS DO KIT DE DESENVOLVIMENTO
+# ========================================================================================================================================
+
+## 7 SEGMENT DISPLAY
+NET "seg_o<0>"      LOC = "L18";     # Bank = 1, Pin name = IO_L10P_1, Type = I/O,                         Sch name = CA
+NET "seg_o<1>"      LOC = "F18";     # Bank = 1, Pin name = IO_L19P_1, Type = I/O,                         Sch name = CB
+NET "seg_o<2>"      LOC = "D17";     # Bank = 1, Pin name = IO_L23P_1/HDC, Type = DUAL,                    Sch name = CC
+NET "seg_o<3>"      LOC = "D16";     # Bank = 1, Pin name = IO_L23N_1/LDC0, Type = DUAL,                   Sch name = CD
+NET "seg_o<4>"      LOC = "G14";     # Bank = 1, Pin name = IO_L20P_1, Type = I/O,                         Sch name = CE
+NET "seg_o<5>"      LOC = "J17";     # Bank = 1, Pin name = IO_L13P_1/A6/RHCLK4/IRDY1, Type = RHCLK/DUAL,  Sch name = CF
+NET "seg_o<6>"      LOC = "H14";     # Bank = 1, Pin name = IO_L17P_1, Type = I/O,                         Sch name = CG
+NET "seg_o<7>"      LOC = "C17";     # Bank = 1, Pin name = IO_L24N_1/LDC2, Type = DUAL,                   Sch name = DP
+
+## 7 SEGMENT DISPLAY ENABLE
+NET "an_o<0>"       LOC = "F17";     # Bank = 1, Pin name = IO_L19N_1, Type = I/O,                         Sch name = AN0
+NET "an_o<1>"       LOC = "H17";     # Bank = 1, Pin name = IO_L16N_1/A0, Type = DUAL,                     Sch name = AN1
+NET "an_o<2>"       LOC = "C18";     # Bank = 1, Pin name = IO_L24P_1/LDC1, Type = DUAL,                   Sch name = AN2
+NET "an_o<3>"       LOC = "F15";     # Bank = 1, Pin name = IO_L21P_1, Type = I/O,                         Sch name = AN3
+
+## LEDS
+NET "led_o<0>"      LOC = "J14";     # Bank = 1, Pin name = IO_L14N_1/A3/RHCLK7, Type = RHCLK/DUAL,        Sch name = JD10/LD0
+NET "led_o<1>"      LOC = "J15";     # Bank = 1, Pin name = IO_L14P_1/A4/RHCLK6, Type = RHCLK/DUAL,        Sch name = JD9/LD1
+NET "led_o<2>"      LOC = "K15";     # Bank = 1, Pin name = IO_L12P_1/A8/RHCLK2, Type = RHCLK/DUAL,        Sch name = JD8/LD2
+NET "led_o<3>"      LOC = "K14";     # Bank = 1, Pin name = IO_L12N_1/A7/RHCLK3/TRDY1, Type = RHCLK/DUAL,  Sch name = JD7/LD3
+NET "led_o<4>"      LOC = "E16";     # Bank = 1, Pin name = N.C., Type = N.C.,                             Sch name = LD4? other than s3e500
+NET "led_o<5>"      LOC = "P16";     # Bank = 1, Pin name = N.C., Type = N.C.,                             Sch name = LD5? other than s3e500
+NET "led_o<6>"      LOC = "E4";      # Bank = 3, Pin name = N.C., Type = N.C.,                             Sch name = LD6? other than s3e500
+NET "led_o<7>"      LOC = "P4";      # Bank = 3, Pin name = N.C., Type = N.C.,                             Sch name = LD7? other than s3e500
+
+## SWITCHES
+NET "switch<0>"     LOC = "G18";     # Bank = 1, Pin name = IP, Type = INPUT,                              Sch name = SW0
+NET "switch<1>"     LOC = "H18";     # Bank = 1, Pin name = IP/VREF_1, Type = VREF,                        Sch name = SW1
+NET "switch<2>"     LOC = "K18";     # Bank = 1, Pin name = IP, Type = INPUT,                              Sch name = SW2
+NET "switch<3>"     LOC = "K17";     # Bank = 1, Pin name = IP, Type = INPUT,                              Sch name = SW3
+NET "switch<4>"     LOC = "L14";     # Bank = 1, Pin name = IP, Type = INPUT,                              Sch name = SW4
+NET "switch<5>"     LOC = "L13";     # Bank = 1, Pin name = IP, Type = INPUT,                              Sch name = SW5
+NET "switch<6>"     LOC = "N17";     # Bank = 1, Pin name = IP, Type = INPUT,                              Sch name = SW6
+NET "switch<7>"     LOC = "R17";     # Bank = 1, Pin name = IP, Type = INPUT,                              Sch name = SW7
+
+
+# ===================================================================================
+# PIN CONNECTION TO CAPETA DFT BOARD HEADERS
+# ===================================================================================
+
+# DFT part_PIs[0001] - FPGA SCH Name = JB10
+
+## NEXYS JC - CAPETA DFT ADAPTER P1
+NET "csoc_data_i<0>"    LOC = "G15";   # DFT part_POs[0002] - FPGA SCH Name = JC1
+NET "csoc_data_i<1>"    LOC = "J16";   # DFT part_POs[0003] - FPGA SCH Name = JC2
+NET "csoc_data_i<2>"    LOC = "G13";   # DFT part_POs[0004] - FPGA SCH Name = JC3
+NET "csoc_data_i<3>"    LOC = "H16";   # DFT part_POs[0005] - FPGA SCH Name = JC4
+NET "csoc_data_i<4>"    LOC = "H15";   # DFT part_POs[0006] - FPGA SCH Name = JC7
+NET "csoc_data_i<5>"    LOC = "F14";   # DFT part_POs[0007] - FPGA SCH Name = JC8
+NET "csoc_data_i<6>"    LOC = "G16";   # DFT part_POs[0008] - FPGA SCH Name = JC9
+NET "csoc_data_i<7>"    LOC = "J12";   # DFT part_POs[0009] - FPGA SCH Name = JB4
+
+## NEXYS JB - CAPETA DFT ADAPTER P2
+NET "csoc_reset_o"      LOC = "M13";  # DFT part_PIs[0010] - FPGA SCH Name = JB3
+NET "csoc_uart_write_i" LOC = "R18";  # DFT part_POs[0010] - FPGA SCH Name = JB1
+NET "csoc_uart_read_o"  LOC = "R15";  # DFT part_PIs[0013] - FPGA SCH Name = JB2
+NET "csoc_data_o<7>"    LOC = "T17";  # DFT part_POs[0009] - FPGA SCH Name = JB4
+NET "csoc_test_se_o"    LOC = "P17";  # DFT part_PIs[0011] - FPGA SCH Name = JB7
+NET "csoc_test_tm_o"    LOC = "R16";  # DFT part_PIs[0012] - FPGA SCH Name = JB8
+# NET ""                LOC = "T18";  # GND
+# NET ""                LOC = "U18";  # GND
+
+## NEXYS JA - CAPETA DFT ADAPTER P3
+NET "csoc_data_o<6>"    LOC = "L15";  # DFT part_PIs[0002] - FPGA SCH name = JA1
+NET "csoc_data_o<5>"    LOC = "K12";  # DFT part_PIs[0003] - FPGA SCH name = JA2
+NET "csoc_data_o<4>"    LOC = "L17";  # DFT part_PIs[0004] - FPGA SCH name = JA3
+NET "csoc_data_o<3>"    LOC = "M15";  # DFT part_PIs[0005] - FPGA SCH name = JA4
+NET "csoc_data_o<2>"    LOC = "K13";  # DFT part_PIs[0006] - FPGA SCH name = JA7
+NET "csoc_data_o<1>"    LOC = "L16";  # DFT part_PIs[0007] - FPGA SCH name = JA8
+NET "csoc_data_o<0>"    LOC = "M14";  # DFT part_PIs[0008] - FPGA SCH name = JA9
+NET "csoc_clk_i"        LOC = "M16";  # DFT part_PIs[0009] - FPGA SCH name = JA10
