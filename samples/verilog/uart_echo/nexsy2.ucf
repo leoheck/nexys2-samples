@@ -1,0 +1,11 @@
+
+NET "clk" LOC = "B8" | IOSTANDARD = LVCMOS33 ;
+NET "clk" PERIOD = 20 HIGH 50%;
+
+NET "leds<0>"  LOC = "J14" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "leds<1>"  LOC = "J15" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "leds<2>"  LOC = "K15" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "leds<3>"  LOC = "K14" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+
+NET "rx" LOC = "U6" | IOSTANDARD = LVTTL ;
+NET "tx" LOC = "P9" | IOSTANDARD = LVTTL ;
