@@ -6,9 +6,17 @@ module txstr #(
 	parameter BAUDRATE = `B9600
 )(
 	input wire clk,   //-- System clock
-	input wire rstn,  //-- Reset (active low)
+	// input wire rstn,  //-- Reset (active low)
 	output wire tx    //-- Serial data output
 );
+
+
+reg rstn;
+
+//-- Initialization
+always @(posedge clk)
+	rstn <= 1;
+
 
 //-- Connecting wires
 wire ready;
@@ -37,23 +45,30 @@ uart_tx #(.BAUDRATE(BAUDRATE)) TX0 (
 //-- Multiplexer with the 8-character string to transmit
 always @*
 	case (char_count)
-		8'd0: data <= "H";
-		8'd1: data <= "e";
-		8'd2: data <= "l";
+		8'd0: data <= ".";
+		8'd1: data <= "H";
+		8'd2: data <= "e";
 		8'd3: data <= "l";
-		8'd4: data <= "o";
-		8'd5: data <= "!";
-		8'd6: data <= ".";
+		8'd4: data <= "l";
+		8'd5: data <= "o";
+		8'd6: data <= "!";
 		8'd7: data <= ".";
-		default: data <= ".";
+		default: data <= "-";
 	endcase
 
 
+// always @(posedge clk)
+// 	if (!rstn)
+// 		char_count = 0;
+// 	else if (cena)
+// 		char_count = char_count + 1;
+
 always @(posedge clk)
-	if (!rstn)
-		char_count = 0;
-	else if (cena)
+	if (cena) begin
 		char_count = char_count + 1;
+	end
+
+
 
 
 //--------------------- CONTROLLER

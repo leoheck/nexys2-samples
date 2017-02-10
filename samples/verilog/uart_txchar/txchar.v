@@ -1,12 +1,19 @@
+
 `default_nettype none
 `include "baudgen.vh"
 
 //-- Top entity
 module txchar (
           input wire clk,   //-- System clock
-          input wire rstn,  //-- Reset (active low)
+          // input wire rstn,  //-- Reset (active low)
           output wire tx    //-- Serial data output
 );
+
+reg rstn;
+
+//-- Initialization
+always @(posedge clk)
+  rstn <= 1;
 
 //-- Serial Unit instantation
 uart_tx #(
