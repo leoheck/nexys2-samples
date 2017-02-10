@@ -1,0 +1,5 @@
+
+# 50 MHz clock
+NET "clk" LOC = "B8";
+
+NET "tx" LOC = "P9";
