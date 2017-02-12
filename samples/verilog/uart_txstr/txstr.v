@@ -26,7 +26,7 @@ reg [7:0] data;
 //-- Characters counter
 //-- It only counts when the cena control signal is enabled
 reg [2:0] char_count;
-reg cena;                //-- Counter enable
+reg cena; //-- Counter enable
 
 //-- fsm state
 reg [1:0] state;
