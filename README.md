@@ -1,27 +1,25 @@
 
 # Verilog Samples
 
-Some verilog examples to run on a [Digilent Nexys2 1200](https://reference.digilentinc.com/reference/programmable-logic/nexys-2/start).
+Some verilog examples to run on a Digilent Nexys2 1200.
 
-__counter__ and __sevenseg__ are verilog ports of the VHDL examples taken from [FPGA-Nexys-2-Beginner](https://github.com/duncanspumpkin/FPGA-Nexys-2-Beginner)
+## Projects/References
 
-
-## Examples
-
-- `counter` use on-board leds to binary count. Speed is determined by switches.
-- `sevenseg` is a stopwatch which uses `btn0` for on/off.
-
-
-Digilent Adept 2 can be found [here](https://reference.digilentinc.com/reference/software/adept/start). Digilent Adept runtime found [here](https://reference.digilentinc.com/reference/software/adept/start?redirect=1#software_downloads). Digilent Plugin for Xilinx Tools can be found [here](https://reference.digilentinc.com/reference/software/digilent-plugin-xilinx-tools/start?redirect=1). A version with all tools are also in the [tools](./digilent/tools) folder.
+- [Digilent Nexys2 home page](https://reference.digilentinc.com/reference/programmable-logic/nexys-2/start).
+- Some VHDLs came from [FPGA-Nexys-2-Beginner](https://github.com/duncanspumpkin/FPGA-Nexys-2-Beginner) repo.
+- [Asynchronous-serial-receiver-unit Wiki](https://github.com/FPGAwars/FPGA-peripherals/wiki/Asynchronous-serial-receiver-unit)
+- [UARTNexys2](https://github.com/BrandonTorres/UARTNexys2)
+- This project is a fork from [nexys2-verilog-samples](https://github.com/utzig/nexys2-verilog-samples)
 
 
-[Digilent cable driver install](https://lighttomorrow.wordpress.com/2011/12/18/how-to-install-digilent-cable-driver-for-xilinx-design-suite-on-ubuntu-11-10/)
+## Required Tools
 
-[Some insteresting digilent instructions](https://wiki.gentoo.org/wiki/Xilinx_USB_JTAG_Programmers)
+- [Digilent Adept 2](https://reference.digilentinc.com/reference/software/adept/start) (runtime and utilities).
+- [Digilent Plugin for Xilinx Tools](https://reference.digilentinc.com/reference/software/digilent-plugin-xilinx-tools/start?redirect=1).
+- A linux version of required tools are also here in this repo at the [tools folder](./digilent/tools).
 
 
-## Extra Examples
+## Extra
 
-[UART](https://github.com/FPGAwars/FPGA-peripherals/wiki/Asynchronous-serial-receiver-unit) maneira com Wiki, exemplos e tudo
-
-[UART2](https://github.com/BrandonTorres/UARTNexys2)
+- [Digilent cable driver install](https://lighttomorrow.wordpress.com/2011/12/18/how-to-install-digilent-cable-driver-for-xilinx-design-suite-on-ubuntu-11-10/)
+- Interesting [digilent instructions](https://wiki.gentoo.org/wiki/Xilinx_USB_JTAG_Programmers)
