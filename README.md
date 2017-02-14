@@ -22,4 +22,4 @@ Some verilog examples to run on a Digilent Nexys2 1200.
 ## Extra
 
 - [Digilent cable driver install](https://lighttomorrow.wordpress.com/2011/12/18/how-to-install-digilent-cable-driver-for-xilinx-design-suite-on-ubuntu-11-10/)
-- Interesting [digilent instructions](https://wiki.gentoo.org/wiki/Xilinx_USB_JTAG_Programmers)
+- [Xilinx USB JTAG Programmers](https://wiki.gentoo.org/wiki/Xilinx_USB_JTAG_Programmers)
