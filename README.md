@@ -23,3 +23,4 @@ Some verilog/vhdl examples to run on a Digilent Nexys2 1200.
 
 - [Digilent cable driver install](https://lighttomorrow.wordpress.com/2011/12/18/how-to-install-digilent-cable-driver-for-xilinx-design-suite-on-ubuntu-11-10/)
 - [Xilinx USB JTAG Programmers](https://wiki.gentoo.org/wiki/Xilinx_USB_JTAG_Programmers)
+- [Script to generate ISE project files](https://github.com/colinoflynn/makeise)
