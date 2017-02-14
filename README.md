@@ -1,7 +1,7 @@
 
-# Verilog Samples
+# Nexys2 Examples
 
-Some verilog examples to run on a Digilent Nexys2 1200.
+Some verilog/vhdl examples to run on a Digilent Nexys2 1200.
 
 ## Projects/References
 
