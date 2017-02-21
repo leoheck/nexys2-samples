@@ -7,7 +7,7 @@ Some verilog/vhdl examples to run on a Digilent Nexys2 1200.
 
 - [Digilent Nexys2 home page](https://reference.digilentinc.com/reference/programmable-logic/nexys-2/start).
 - Some VHDLs came from [FPGA-Nexys-2-Beginner](https://github.com/duncanspumpkin/FPGA-Nexys-2-Beginner) repo.
-- [Asynchronous-serial-receiver-unit Wiki](https://github.com/FPGAwars/FPGA-peripherals/wiki/Asynchronous-serial-receiver-unit)
+- Asynchronous-serial-receiver-unit [RX](https://github.com/FPGAwars/FPGA-peripherals/wiki/Asynchronous-serial-receiver-unit) and [TX](https://github.com/FPGAwars/FPGA-peripherals/wiki/Asynchronous-serial-transmitter-unit) Wiki
 - [UARTNexys2](https://github.com/BrandonTorres/UARTNexys2)
 - This project is a fork from [nexys2-verilog-samples](https://github.com/utzig/nexys2-verilog-samples)
 
